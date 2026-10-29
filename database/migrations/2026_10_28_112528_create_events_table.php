@@ -16,10 +16,10 @@ return new class extends Migration
             $table->string('title');
             $table->string('slug')->unique();
             $table->text('description');
-            $table->string('vanue');
+            $table->string('venue');
             $table->dateTime('start_at');
             $table->string('banner')->nullable();
-            $table->enum('status', ['draft', 'publised'])->default('draft');
+            $table->enum('status', ['draft', 'published'])->default('draft');
             $table->timestamps();
         });
     }
